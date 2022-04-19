@@ -1,22 +1,23 @@
 <template>
     <div class="characters-gallery">
         <CharacterCard
-        v-for="characters in charactersData"
-        :key="characters.id"
-        :name="characters.name"
-        :gender="characters.gender"
-        :occupation="characters.occupation"
-        :firstEpisode="characters.firstEpisode"
-        :voicedBy="characters.voicedBy"
-        :pictureUrl="characters.image"
+        v-for="character in charactersData"
+        :key="character.id"
+        :name="character.name"
+        :gender="character.gender"
+        :occupation="character.occupation"
+        :firstEpisode="character.firstEpisode"
+        :voicedBy="character.voicedBy"
+        :pictureUrl="character.image"/>
+    </div>
 </template>
 
 <script>
-    import CharacterCard from './Character.vue'
+    import CharacterCard from './CharacterCard.vue'
     import getCharactersData from '@services/api/bobsburgersAPI.js'
 
     export default{
-        name:'CharacterGallery',
+        name:'CharactersGallery',
         data(){
             return{
                 charactersData:[]
@@ -30,7 +31,7 @@
                 this.charactersData=await getCharactersData()
             }
         },
-        components:{
+        components: {
             CharacterCard
         },
     }

@@ -20,7 +20,7 @@
             occupation:String,
             firstEpisode:String,
             voicedBy:String,
-            pictureUrl:{type:String, default:"https://my-best-kennel.com/pictures.default.png"}
+            pictureUrl:{type:String, default:"https://bobsburgers-api.…/images/characters/1.jpg"}
         }
     }
 </script>

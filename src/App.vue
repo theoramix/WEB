@@ -1,27 +1,21 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Bob's Bugers Dex"/>
-    <CharacterCard />
-    <Footer />
+    <p>Bob's Burgers Encyclopedia</p>
+    <CharactersGallery/>
   </div>
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
-import CharacterCard from './components/Character.vue'
+import CharactersGallery from './components/CharactersGallery.vue'
 
 export default {
   name: 'App',
   components: {
-    CharacterCard,
+    CharactersGallery,
   }
 }
 </script>
-
-
-
-
 
 <style>
 #app {
@@ -33,3 +27,4 @@ export default {
   margin-top: 60px;
 }
 </style>
+<!-- -->
